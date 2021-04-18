@@ -19,7 +19,7 @@ To get a local copy up and running follow these steps:
 
 ### Prerequisites
  - Node and npm installed
- - [Optional] Forwarded port 3001 (for WAN communication)
+ - [Optional] Forwarded selected port (default: 3001) (for WAN communication)
  - [Optional] SSL certificate (highly recomended)
 
 ### Installation
@@ -39,7 +39,7 @@ To get a local copy up and running follow these steps:
     or
 
     ```
-    yarn add
+    yarn install
     ```
 
 ## Usage
@@ -92,6 +92,6 @@ Route: /api/manage
 ```
 > Connects to the machine using SSH and executes provided shutdown command
 
-> Login by using id_rsa will be added in the future release
+> Login by id_rsa will be added in the future release
 
-> Default SSH port is set to 22 is nothing is provided
+> Default SSH port is set to 22 if nothing is provided

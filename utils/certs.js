@@ -1,8 +1,9 @@
 const fs = require('fs');
+const CONFIG = require('../config');
 
 const CERTS = {
-    key: fs.readFileSync('./sslcert/key.pem'),
-    cert: fs.readFileSync('./sslcert/cert.pem')
+    key: fs.readFileSync(CONFIG.KEY_PATH),
+    cert: fs.readFileSync(CONFIG.CERT_PATH)
 };
 
 module.exports = CERTS;
